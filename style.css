@@ -1,0 +1,81 @@
+body{
+    background-image: linear-gradient(90deg, #00000079, #00000079), url("img/fondo.jpg");
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1800px;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.container-card{
+	width: 90%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+}
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 10px;
+	margin-top: 20px;
+	text-align: center;
+	color: #ffffff;
+}
+.card{
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 100%;
+	height: 280px;
+}
+.card .contenido-card{
+	padding: 30px;
+	text-align: center;
+}
+.card .contenido-card h3{
+	margin-bottom: 10px;
+	color: #d66ac4;
+}
+.card .contenido-card p{
+	line-height: 1.9;
+	color: #000000;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #d66ac4;
+	border: 1px solid #d66ac4;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+.card .contenido-card a:hover{
+	background: #d66ac4;
+	color: #fff;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+}
